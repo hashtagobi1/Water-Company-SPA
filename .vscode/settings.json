@@ -1,0 +1,30 @@
+{
+    "files.autoSave": "afterDelay",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "workbench.colorTheme": "Aurora X",
+    "explorer.confirmDelete": false,
+    "liveSassCompile.settings.formats": [
+    
+
+
+
+
+
+
+
+        {
+            "format":"expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "./main.scss"],
+"liveSassCompile.settings.showOutputWindow": false,
+"liveSassCompile.settings.generateMap": false
+}
