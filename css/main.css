@@ -8,17 +8,7 @@
   /*deals with all containers on the page*/
 }
 
-* .transition-fade {
-  opacity: 1;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-* .transition-fade html.is-animating {
-  opacity: 0;
-}
-
-* .container {
+.container {
   /*brings into center*/
   width: 100%;
   max-width: 100%;
@@ -28,19 +18,19 @@
 }
 
 @media (max-width: 1024px) {
-  * .container {
+  .container {
     padding-left: 64px;
     padding-right: 64px;
   }
 }
 
 @media (max-width: 1024px) and (max-width: 767px) {
-  * .container {
+  .container {
     padding-left: 32 px;
   }
 }
 
-* section h2 {
+section h2 {
   text-align: center;
   margin-bottom: 32px;
   text-transform: uppercase;
@@ -48,7 +38,7 @@
   color: #212121;
 }
 
-* .button {
+.button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -70,16 +60,16 @@
 }
 
 @media (max-width: 767px) {
-  * .button {
+  .button {
     font-size: 12px;
   }
 }
 
-* img {
+img {
   max-width: 100%;
 }
 
-* header {
+header {
   position: fixed;
   /*sets header to fixed, means it stays there*/
   top: 0;
@@ -89,7 +79,7 @@
   /*header nav bar*/
 }
 
-* header .container {
+header .container {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -103,7 +93,7 @@
           align-items: center;
 }
 
-* header .container h2 {
+header .container h2 {
   color: inherit;
   text-transform: lowercase;
   font-size: 32px;
@@ -111,11 +101,11 @@
   -webkit-text-stroke: 0.02em black;
 }
 
-* header .container h2 span {
+header .container h2 span {
   font-weight: normal;
 }
 
-* header .container nav {
+header .container nav {
   display: -ms-grid;
   display: grid;
   grid-gap: 16px;
@@ -124,28 +114,28 @@
 }
 
 @media (max-width) {
-  * header .container nav {
+  header .container nav {
     display: none;
   }
 }
 
-* header .container nav a {
+header .container nav a {
   color: inherit;
   font-size: 30px;
   text-decoration: none;
   font-weight: lighter;
 }
 
-* header.is-scrolling {
+header.is-scrolling {
   background-image: linear-gradient(289deg, #00aade, #00aade9a);
 }
 
-* header.is-scrolling .container {
+header.is-scrolling .container {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-* main section.banner {
+main section.banner {
   position: relative;
   min-height: 100vh;
   display: -webkit-box;
@@ -160,7 +150,7 @@
   /*psuedo tag used after element*/
 }
 
-* main section.banner:after {
+main section.banner:after {
   content: "";
   display: block;
   /*takes up whole row*/
@@ -176,49 +166,49 @@
   background-color: #00a9de;
 }
 
-* main section.banner .container {
+main section.banner .container {
   position: relative;
   z-index: 1;
   text-align: right;
 }
 
-* main section.banner .container h1 {
+main section.banner .container h1 {
   font-size: 72px;
   margin-bottom: 32px;
 }
 
-* main section.banner .container h1 span {
+main section.banner .container h1 span {
   color: white;
 }
 
 @media (max-width: 767px) {
-  * main section.banner .container h1 {
+  main section.banner .container h1 {
     font-size: 38px;
   }
 }
 
-* main section.banner .container h3 {
+main section.banner .container h3 {
   font-size: 36px;
   font-weight: lighter;
   margin-bottom: 32px;
 }
 
 @media (max-width: 767px) {
-  * main section.banner .container h3 {
+  main section.banner .container h3 {
     font-size: 17px;
   }
 }
 
-* main .services {
+main .services {
   background-color: #eee;
 }
 
-* main .services .container {
+main .services .container {
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
-* main .services .container .services-grid {
+main .services .container .services-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -227,20 +217,20 @@
 }
 
 @media (max-width: 1024px) {
-  * main .services .container .services-grid {
+  main .services .container .services-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 767px) {
-  * main .services .container .services-grid {
+  main .services .container .services-grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-* main .services .container .services-grid .service {
+main .services .container .services-grid .service {
   margin: 24px;
   background-color: white;
   border-radius: 16px;
@@ -249,17 +239,17 @@
           box-shadow: 40px 13px 22px -4px rgba(0, 0, 0, 0.27);
 }
 
-* main .services .container .services-grid .service figure {
+main .services .container .services-grid .service figure {
   text-align: center;
 }
 
-* main .services .container .services-grid .service .img-box {
+main .services .container .services-grid .service .img-box {
   display: block;
   width: 100%;
   background-image: linear-gradient(289deg, #00aade, #00aade9a);
 }
 
-* main .services .container .services-grid .service .img-box .img {
+main .services .container .services-grid .service .img-box .img {
   display: block;
   width: 100%;
   height: 256px;
@@ -267,16 +257,16 @@
      object-fit: cover;
 }
 
-* main .services .container .services-grid .service .content {
+main .services .container .services-grid .service .content {
   padding: 16 px;
 }
 
-* main .projects {
+main .projects {
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
-* main .projects .projects-grid {
+main .projects .projects-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -286,46 +276,46 @@
 }
 
 @media (max-width: 768px) {
-  * main .projects .projects-grid {
+  main .projects .projects-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 767px) {
-  * main .projects .projects-grid {
+@media (max-width: 768px) {
+  main .projects .projects-grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-* main .projects .projects-grid .project {
+main .projects .projects-grid .project {
   background-image: url("../assets/projects/blackgirl.jpeg");
   border-radius: 16px;
   overflow: hidden;
 }
 
-* main .projects .projects-grid .project:nth-child(2) {
+main .projects .projects-grid .project:nth-child(2) {
   background-image: url("/assets/projects/blackguy.jpeg");
 }
 
-* main .projects .projects-grid .project:nth-child(3) {
+main .projects .projects-grid .project:nth-child(3) {
   background-image: url("/assets/projects/blackwoman.jpeg");
 }
 
-* main .projects .projects-grid .project:nth-child(4) {
+main .projects .projects-grid .project:nth-child(4) {
   background-image: url("/assets/projects/kids.jpeg");
 }
 
-* main .projects .projects-grid .project:nth-child(5) {
+main .projects .projects-grid .project:nth-child(5) {
   background-image: url("/assets/projects/bubbles.jpeg");
 }
 
-* main .projects .projects-grid .project:nth-child(6) {
+main .projects .projects-grid .project:nth-child(6) {
   background-image: url("/assets/projects/sporty.jpeg");
 }
 
-* main .projects .projects-grid .project .content {
+main .projects .projects-grid .project .content {
   opacity: 0;
   color: azure;
   padding: 16px;
@@ -335,56 +325,56 @@
   text-align: center;
 }
 
-* main .projects .projects-grid .project .content h3 {
+main .projects .projects-grid .project .content h3 {
   font-size: 32px;
   margin-bottom: 16px;
 }
 
 @media (max-width: 1024px) {
-  * main .projects .projects-grid .project .content h3 {
+  main .projects .projects-grid .project .content h3 {
     font-size: 28px;
   }
 }
 
-* main .projects .projects-grid .project .content p {
+main .projects .projects-grid .project .content p {
   font-size: 18px;
   margin-bottom: 16px;
 }
 
 @media (max-width: 1024px) {
-  * main .projects .projects-grid .project .content p {
+  main .projects .projects-grid .project .content p {
     font-size: 16px;
   }
 }
 
-* main .projects .projects-grid .project:hover .content {
+main .projects .projects-grid .project:hover .content {
   opacity: 1;
 }
 
-* main .center {
+main .center {
   text-align: center;
 }
 
-* main .contact {
+main .contact {
   background-color: #00aff0;
 }
 
-* main .contact .container {
+main .contact .container {
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
-* main .contact .container h2 {
+main .contact .container h2 {
   color: white;
 }
 
-* main .contact .container form {
+main .contact .container form {
   display: block;
   margin: 0 auto;
   max-width: 680px;
 }
 
-* main .contact .container form .form-grid {
+main .contact .container form .form-grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 16px;
@@ -394,14 +384,14 @@
 }
 
 @media (max-width: 767px) {
-  * main .contact .container form .form-grid {
+  main .contact .container form .form-grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-* main .contact .container form .form-grid .form-element,
-* main .contact .container form .form-grid .form-area {
+main .contact .container form .form-grid .form-element,
+main .contact .container form .form-grid .form-area {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -417,31 +407,31 @@
   font-size: 20px;
 }
 
-* main .contact .container form .form-grid .form-element::-webkit-input-placeholder,
-* main .contact .container form .form-grid .form-area::-webkit-input-placeholder {
+main .contact .container form .form-grid .form-element::-webkit-input-placeholder,
+main .contact .container form .form-grid .form-area::-webkit-input-placeholder {
   color: #aaa;
 }
 
-* main .contact .container form .form-grid .form-element:-ms-input-placeholder,
-* main .contact .container form .form-grid .form-area:-ms-input-placeholder {
+main .contact .container form .form-grid .form-element:-ms-input-placeholder,
+main .contact .container form .form-grid .form-area:-ms-input-placeholder {
   color: #aaa;
 }
 
-* main .contact .container form .form-grid .form-element::-ms-input-placeholder,
-* main .contact .container form .form-grid .form-area::-ms-input-placeholder {
+main .contact .container form .form-grid .form-element::-ms-input-placeholder,
+main .contact .container form .form-grid .form-area::-ms-input-placeholder {
   color: #aaa;
 }
 
-* main .contact .container form .form-grid .form-element::placeholder,
-* main .contact .container form .form-grid .form-area::placeholder {
+main .contact .container form .form-grid .form-element::placeholder,
+main .contact .container form .form-grid .form-area::placeholder {
   color: #aaa;
 }
 
-* main .contact .container form .form-grid .form-area {
+main .contact .container form .form-grid .form-area {
   grid-column: 1/-1;
 }
 
-* main .contact .container form .right-align {
+main .contact .container form .right-align {
   text-align: right;
 }
 

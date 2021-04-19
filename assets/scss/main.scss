@@ -7,12 +7,12 @@
 
     /*deals with all containers on the page*/
 
-    .transition-fade {
-        opacity: 1;
-        transition: 500ms;
-        html.is-animating {
-            opacity: 0;
-        }
+    // .transition-fade {
+    //     opacity: 1;
+    //     transition: 500ms;
+    //     html.is-animating {
+    //         opacity: 0;
+    //     }
 
       
     } 
@@ -256,7 +256,7 @@
                     grid-template-columns: repeat(2, 1fr);
                 }
 
-                @media (max-width: 767px) {
+                @media (max-width: 768px) {
                     grid-template-columns: repeat(1, 1fr);
                 }
 
@@ -380,7 +380,7 @@
             }
         }
     }
-}
+// }
 
 @media (max-width: 767px) {
     .hide-mob {
