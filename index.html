@@ -15,24 +15,28 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer type="text/javascript" src="./app.js"></script>
+    
+
 </head>
 
 <body>
 
     <!--header tag for header + navigation-->
-    <header class="is-scrolling">
+    <header class="is-scrolling" id="swup" class="transition-fade">
         <div class="container">
             <h2><span>The </span>Water <span>Company,</span></h2>
             <nav>
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#services">Services</a>
+                <a href="/index.html">Home</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/services.html">Services</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main >
 
         <section class="banner">
             <div class="container">
@@ -268,8 +272,5 @@
 
 
     </main>
-    <script type="text/javascript" src="./app.js"></script>
 
 </body>
-
-</html>

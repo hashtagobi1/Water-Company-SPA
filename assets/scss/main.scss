@@ -7,6 +7,16 @@
 
     /*deals with all containers on the page*/
 
+    .transition-fade {
+        opacity: 1;
+        transition: 500ms;
+        html.is-animating {
+            opacity: 0;
+        }
+
+      
+    } 
+
     .container {
         /*brings into center*/
         width: 100%;
@@ -23,7 +33,6 @@
 
             @media (max-width: 767px) {
                 padding-left: 32 px;
-                
             }
         }
     }
@@ -56,7 +65,6 @@
         text-transform: uppercase;
         font-weight: bold;
         cursor: pointer;
-
 
         @media (max-width: 767px) {
             font-size: 12px;
@@ -117,14 +125,12 @@
             }
         }
 
-        &.is-scrolling{
+        &.is-scrolling {
             background-image: linear-gradient(289deg, #00aade, #00aade9a);
-           .container {
-            padding-top: 16px;
-            padding-bottom: 16px;
+            .container {
+                padding-top: 16px;
+                padding-bottom: 16px;
             }
-
-
         }
     }
 
@@ -167,10 +173,10 @@
 
                     span {
                         color: white;
-                        }
+                    }
 
-                        @media (max-width:767px) {
-                            font-size: 38px;
+                    @media (max-width: 767px) {
+                        font-size: 38px;
                     }
                 }
                 h3 {
@@ -178,9 +184,9 @@
                     font-weight: lighter;
                     margin-bottom: 32px;
 
-                    @media (max-width:767px) {
+                    @media (max-width: 767px) {
                         font-size: 17px;
-                }
+                    }
                 }
             }
         }
@@ -200,10 +206,9 @@
                         grid-template-columns: repeat(2, 1fr);
                     }
 
-
-            @media (max-width: 767px) {
-                grid-template-columns: repeat(1, 1fr);
-            }
+                    @media (max-width: 767px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
 
                     .service {
                         margin: 24px;
@@ -333,7 +338,6 @@
                     margin: 0 auto;
                     max-width: 680px;
 
-
                     .form-grid {
                         display: grid;
                         grid-gap: 16px;
@@ -342,7 +346,7 @@
 
                         @media (max-width: 767px) {
                             grid-template-columns: repeat(1, 1fr);
-                        }  
+                        }
 
                         .form-element,
                         .form-area {
@@ -371,20 +375,15 @@
                     }
                     .right-align {
                         text-align: right;
-                        
                     }
                 }
-
-
             }
-
         }
     }
 }
 
-
-@media (max-width: 767px){
-    .hide-mob{
+@media (max-width: 767px) {
+    .hide-mob {
         display: none;
     }
 }
